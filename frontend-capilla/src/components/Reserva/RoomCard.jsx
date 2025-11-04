@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './RoomCard.css';
+import '../css/RoomCard.css';
 
 const RoomCard = ({ room, onViewDetails, isRecommended = false }) => {
   const [imageLoaded, setImageLoaded] = useState(false);

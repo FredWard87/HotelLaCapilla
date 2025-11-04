@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './BookingModal.css';
-import { roomTypes } from '../services/roomData';
+import '../css/BookingModal.css';
+import { roomTypes } from '../../services/roomData';
 
 const BookingModal = ({ room, isOpen, onClose, onBook }) => {
   const [currentStep, setCurrentStep] = useState(1);
