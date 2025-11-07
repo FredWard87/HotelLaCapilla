@@ -1,118 +1,127 @@
+// Importar imágenes locales
+import img1 from '../assets2/juniorsuit/1.jpg';
+import img2 from '../assets2/juniorsuit/2.jpg';
+import img3 from '../assets2/juniorsuit/3.jpg';
+import img4 from '../assets2/juniorsuit/4.png';
+import img5 from '../assets2/juniorsuit/5.jpg';
+import portada from '../assets2/juniorsuit/POTADAJUNIORSUITE.jpg';
+
+import img6 from '../assets2/standar/1.png';
+import img7 from '../assets2/standar/2.jpg';
+import img8 from '../assets2/standar/3.jpg';
+import img9 from '../assets2/standar/4.jpg';
+import img10 from '../assets2/standar/5.jpg';
+import img11 from '../assets2/standar/6.jpg';
+import portadaStandar from '../assets2/standar/PORTADASTANDARD.jpg';
+
+import img12 from '../assets2/mastersuit/1.png';
+import img13 from '../assets2/mastersuit/2.png';
+import img14 from '../assets2/mastersuit/3.jpg';
+import img15 from '../assets2/mastersuit/4.jpg';
+import img16 from '../assets2/mastersuit/5.jpg';
+import img17 from '../assets2/mastersuit/6.jpg';
+import img18 from '../assets2/mastersuit/7.jpg';
+import img19 from '../assets2/mastersuit/8.jpg';
+import portadaMastersuit from '../assets2/mastersuit/PORTADAMASTERSUITE.jpg';
+
+// ========================== DATA DE HABITACIONES ==========================
 export const roomTypes = [
   {
     id: 1,
-    name: "Habitación Standard",
-    type: "standard",
-    description: "Una experiencia de lujo en su expresión más refinada. Nuestra habitación Standard combina elegancia atemporal con comodidades modernas, creando un santuario personal de tranquilidad.",
-    price: 2800,
-    size: "35 m²",
+    name: "STANDARD",
+    type: "STANDARD",
+    description:
+      "Una experiencia de lujo en su expresión más refinada. Nuestra habitación Standard combina elegancia atemporal con comodidades modernas, creando un santuario personal de tranquilidad.",
+    price: 2400,
+    size: "25 m²",
     capacity: 2,
     bedType: "Cama Queen Size",
-    images: [
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1586105251261-72a756497a11?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
-    ],
+    images: [portadaStandar,img6, img7, img8, img9, img10, img11],
     amenities: [
-      "WiFi Premium de Alta Velocidad",
-      "Smart TV 4K Ultra HD",
-      "Aire Acondicionado Inteligente",
-      "Baño de Mármol con Amenidades",
-      "Room Service 24 Horas",
-      "Caja Fuerte Digital",
-      "Secador de Pelo Profesional",
-      "Minibar Curated",
-      "Vista a los Jardines"
-    ]
+      "Wifi",
+      "House Keeping", 
+      "Aire Acondicionado",
+      "Smart Tv",
+      "2 Pax",
+      "25 m²"
+    ],
   },
   {
     id: 2,
-    name: "Junior Suite Deluxe",
-    type: "suite",
-    description: "La suite que redefine el concepto de espacio y comodidad. Diseñada para quienes buscan una experiencia superior con detalles meticulosamente cuidados y servicios exclusivos.",
-    price: 4500,
-    size: "55 m²",
+    name: "JUNIOR SUITE",
+    type: "SUITE",
+    description:
+      "La suite que redefine el concepto de espacio y comodidad. Diseñada para quienes buscan una experiencia superior con detalles meticulosamente cuidados y servicios exclusivos.",
+    price: 2800,
+    size: "45 m²",
     capacity: 2,
     bedType: "Cama King Size",
-    images: [
-      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1587985064138-4e2d0edf9429?w=800&auto=format&fit=crop&q=80"
-    ],
+    images: [portada,img1, img2, img3, img4, img5],
     amenities: [
-      "WiFi Premium de Alta Velocidad",
-      "Smart TV 4K 55'",
-      "Sistema de Climatización Inteligente",
-      "Baño de Mármol con Tina",
-      "Terraza Privada con Vista",
-      "Minibar Gourmet",
-      "Room Service 24 Horas",
-      "Sistema de Sonido Surround",
-      "Atención de Mayordomo"
-    ]
+      "Wifi",
+      "House Keeping",
+      "Aire Acondicionado", 
+      "Smart Tv",
+      "2 Pax",
+      "45 m²"
+    ],
   },
   {
     id: 3,
-    name: "Suite Presidencial",
-    type: "presidential",
-    description: "El epítome del lujo y la sofisticación. Nuestra Suite Presidencial ofrece una experiencia incomparable con espacios generosos, detalles artesanales y servicios de clase mundial.",
-    price: 8500,
-    size: "95 m²",
+    name: "MASTER SUITE",
+    type: "Master",
+    description:
+      "El epítome del lujo y la sofisticación. Nuestra Suite Presidencial ofrece una experiencia incomparable con espacios generosos, detalles artesanales y servicios de clase mundial.",
+    price: 3600,
+    size: "60 m²",
     capacity: 4,
     bedType: "Cama King Size + Sala de Estar",
-    images: [
-      "https://images.unsplash.com/photo-1582582621959-48d27397dc69?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1535827841776-24afc1e255ac?w=800&auto=format&fit=crop&q=80"
-    ],
+    images: [portadaMastersuit,img12, img13, img14, img15, img16, img17, img18, img19],
     amenities: [
-      "WiFi Premium Empresarial",
-      "Smart TV 4K 65' & 55'",
-      "Sistema de Climatización por Zonas",
-      "Jacuzzi Privado con Vista",
-      "Terraza Exclusiva",
-      "Minibar Premium",
-      "Servicio de Mayordomo 24H",
-      "Sistema de Entretenimiento",
-      "Sala de Estar Independiente",
-      "Vestidor Privado"
-    ]
-  }
+      "Wifi",
+      "House Keeping",
+      "Aire Acondicionado",
+      "Smart Tv", 
+      "4 Pax",
+      "60 m²"
+    ],
+  },
 ];
 
-// Simular disponibilidad
+// ========================== DISPONIBILIDAD ==========================
 export const checkAvailability = (roomId, checkIn, checkOut) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve({ 
-        available: true, 
+      resolve({
+        available: true,
         message: "Suite disponible para las fechas seleccionadas",
-        rate: roomTypes.find(room => room.id === roomId)?.price || 0
+        rate: roomTypes.find((room) => room.id === roomId)?.price || 0,
       });
     }, 800);
   });
 };
 
-// Simular procesamiento de pago
+// ========================== PROCESAMIENTO DE PAGO ==========================
 export const processPayment = (paymentData) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      // Simular rechazo aleatorio (5% de probabilidad)
       if (Math.random() < 0.05) {
-        reject({ 
-          success: false, 
-          message: "Transacción declinada. Por favor verifique los datos de su tarjeta o utilice otro método de pago." 
+        reject({
+          success: false,
+          message:
+            "Transacción declinada. Por favor verifique los datos de su tarjeta o utilice otro método de pago.",
         });
       } else {
         resolve({
           success: true,
           bookingId: `LC-${Date.now()}`,
-          transactionId: `TXN-${Math.random().toString(36).substr(2, 12).toUpperCase()}`,
-          message: "Pago procesado exitosamente. Su reserva ha sido confirmada.",
-          timestamp: new Date().toISOString()
+          transactionId: `TXN-${Math.random()
+            .toString(36)
+            .substr(2, 12)
+            .toUpperCase()}`,
+          message:
+            "Pago procesado exitosamente. Su reserva ha sido confirmada.",
+          timestamp: new Date().toISOString(),
         });
       }
     }, 2500);
