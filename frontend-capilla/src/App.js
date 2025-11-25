@@ -6,6 +6,7 @@ import Home from './components/Home/home';
 import { AnimationProvider } from './context/AnimationContext';
 import './App.css';
 import Boutique from './components/ReservaBoutique/ReservaHomeBoutique'
+import Bodas from './components/Bodas/Bodas';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/reservas" element={<ReservaHome />} />
             <Route path="/boutique" element={<Boutique />} />
+            <Route path="/bodas" element={<Bodas />} />
           </Routes>
         </div>
       </Router>
